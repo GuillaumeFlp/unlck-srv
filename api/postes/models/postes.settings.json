@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postes",
+  "info": {
+    "name": "postes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "creationDate": {
+      "type": "date"
+    },
+    "city": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "minimumSalary": {
+      "type": "integer"
+    },
+    "maximumSalary": {
+      "type": "integer"
+    },
+    "context": {
+      "type": "richtext"
+    },
+    "responsibilities": {
+      "type": "richtext"
+    },
+    "profile": {
+      "type": "richtext"
+    },
+    "advantages": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "string"
+    }
+  }
+}
