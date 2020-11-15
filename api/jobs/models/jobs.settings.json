@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "postes",
+  "collectionName": "jobs",
   "info": {
-    "name": "postes"
+    "name": "Jobs"
   },
   "options": {
     "increments": true,
@@ -16,12 +16,6 @@
     "creationDate": {
       "type": "date"
     },
-    "city": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string"
-    },
     "minimumSalary": {
       "type": "integer"
     },
@@ -31,7 +25,7 @@
     "context": {
       "type": "richtext"
     },
-    "responsibilities": {
+    "responsabilities": {
       "type": "richtext"
     },
     "profile": {
@@ -40,8 +34,19 @@
     "advantages": {
       "type": "richtext"
     },
-    "tags": {
-      "type": "string"
+    "job_type": {
+      "model": "job-type"
+    },
+    "location": {
+      "model": "locations"
+    },
+    "skills": {
+      "collection": "skills",
+      "via": "job"
+    },
+    "technologies": {
+      "collection": "technologies",
+      "via": "job"
     }
   }
 }

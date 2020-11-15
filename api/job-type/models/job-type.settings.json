@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_types",
+  "info": {
+    "name": "JobType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
